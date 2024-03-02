@@ -74,6 +74,7 @@ public class EndToEnd {
 		Thread.sleep(3000);
 		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();
 
+
 		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
 		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
 		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
@@ -83,6 +84,7 @@ public class EndToEnd {
 		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
 		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
 		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();
+
 		
 
 	}
