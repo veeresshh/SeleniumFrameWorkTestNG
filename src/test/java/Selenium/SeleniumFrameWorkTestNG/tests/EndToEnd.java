@@ -73,6 +73,10 @@ public class EndToEnd {
 		
 		Thread.sleep(3000);
 		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();
+		
+		Driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
+		Driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
+		Driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
 
 		
 	}
