@@ -77,17 +77,19 @@ public class EndToEnd {
 		Driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
 		Driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
 		Driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
-
-
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();
+		Assert.assertTrue(Validation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		Assert.assertTrue(Validation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		Assert.assertTrue(Validation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		Assert.assertTrue(Validation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		
+		
+		
+		Driver.findElement(By.cssSelector(".totalRow button")).click();
+		Driver.findElement(By.cssSelector(".totalRow button")).click();
+		Driver.findElement(By.cssSelector(".totalRow button")).click();
+		Driver.findElement(By.cssSelector(".totalRow button")).click();
+		Driver.findElement(By.cssSelector(".totalRow button")).click();
+		Driver.findElement(By.cssSelector(".totalRow button")).click();
 
 		
 
