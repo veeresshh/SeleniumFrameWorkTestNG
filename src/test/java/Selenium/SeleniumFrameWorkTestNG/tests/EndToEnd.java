@@ -45,6 +45,7 @@ public class EndToEnd {
 		
 		//Click on Cart
 		Driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
+
 		
 		Thread.sleep(3000);
 		//Fetch the List of Items inside the cart
@@ -71,7 +72,12 @@ public class EndToEnd {
 		Assert.assertTrue(Validation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
 		Thread.sleep(3000);
-		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();		
+		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();
+		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
+		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
+		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
+		Driver.findElement(By.xpath("//i[@class='fa fa-sign-out']")).click();	
+		
 	}
 
 }
