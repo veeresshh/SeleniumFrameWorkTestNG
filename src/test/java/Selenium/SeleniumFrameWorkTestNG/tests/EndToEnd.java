@@ -77,7 +77,10 @@ public class EndToEnd {
 		Driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
 		Driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
 		Driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
-
+		Assert.assertTrue(Validation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		Assert.assertTrue(Validation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		Assert.assertTrue(Validation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		Assert.assertTrue(Validation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
 	}
 
