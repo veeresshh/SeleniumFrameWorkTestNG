@@ -55,17 +55,130 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Submit Order Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 01 12:57:27 IST 2024</td>
+<td>Started on:</td><td>Sat May 25 02:02:06 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (21 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19648 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>ErrorHandling </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest<br>Parameters: {password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.76, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\VEERESH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 125.0.6422.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fea0e348c2839dd4d50a7ade241df491
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Selenium.SeleniumFrameWorkTestNG.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:36)
+	at Selenium.SeleniumFrameWorkTestNG.PageObjects.ProductCatalogue.getProductList(ProductCatalogue.java:36)
+	at Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace388403095", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace388403095'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.76, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\VEERESH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 125.0.6422.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fea0e348c2839dd4d50a7ade241df491
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Selenium.SeleniumFrameWorkTestNG.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:36)
+	at Selenium.SeleniumFrameWorkTestNG.PageObjects.ProductCatalogue.getProductList(ProductCatalogue.java:36)
+	at Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>10</td>
+<td>Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest<br>Parameters: {password=Iamking@000, product=ZARA COAT 3, email=anshika@gmail.com}</td>
+<td></td>
+<td>3</td>
+<td>Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.OrderHistoryTest()'><b>OrderHistoryTest</b><br>Test class: Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest</td>
+<td><div><pre>java.lang.Throwable: Method Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.OrderHistoryTest() on instance Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31 depends on not successfully finished methods 
+[Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder() on instance Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace247054189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace247054189'><pre>java.lang.Throwable: Method Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.OrderHistoryTest() on instance Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31 depends on not successfully finished methods 
+[Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder() on instance Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31</td></tr>
+</table><p>
 </body>
 </html>

@@ -7,7 +7,7 @@
         <methods>
           <include name="launchApplication"/>
           <include name="OrderHistoryTest"/>
-          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="submitOrder" invocation-numbers="1"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest -->

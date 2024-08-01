@@ -1,20 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-02T12:23:15 IST" name="Default suite" finished-at="2024-03-02T12:23:32 IST" duration-ms="16730">
+  <suite started-at="2024-05-25T02:02:06 IST" name="Suite" finished-at="2024-05-25T02:02:25 IST" duration-ms="19648">
     <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest@1bdaa23d]" name="LoginErrorValidation" class="Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
       <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" name="submitOrder" class="Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]" name="submitOrder" class="Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-03-02T12:23:15 IST" name="Default test" finished-at="2024-03-02T12:23:32 IST" duration-ms="16730">
-      <class name="Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" started-at="2024-03-02T12:23:15 IST" name="launchApplication" finished-at="2024-03-02T12:23:21 IST" duration-ms="5800" status="PASS">
+    <test started-at="2024-05-25T02:02:06 IST" name="Error Validations Test" finished-at="2024-05-25T02:02:16 IST" duration-ms="9811">
+      <class name="Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest@1bdaa23d]" started-at="2024-05-25T02:02:06 IST" name="launchApplication" finished-at="2024-05-25T02:02:09 IST" duration-ms="2985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" started-at="2024-03-02T12:23:21 IST" name="submitOrder" data-provider="getData" finished-at="2024-03-02T12:23:24 IST" duration-ms="3070" status="PASS">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest@1bdaa23d]" started-at="2024-05-25T02:02:09 IST" name="LoginErrorValidation" finished-at="2024-05-25T02:02:10 IST" duration-ms="1043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest@1bdaa23d]" started-at="2024-05-25T02:02:10 IST" name="tearDown" finished-at="2024-05-25T02:02:10 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest@1bdaa23d]" started-at="2024-05-25T02:02:10 IST" name="launchApplication" finished-at="2024-05-25T02:02:13 IST" duration-ms="3276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest@1bdaa23d]" started-at="2024-05-25T02:02:13 IST" name="ProductErrorValidation" finished-at="2024-05-25T02:02:15 IST" duration-ms="2266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest@1bdaa23d]" started-at="2024-05-25T02:02:15 IST" name="tearDown" finished-at="2024-05-25T02:02:16 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Selenium.SeleniumFrameWorkTestNG.tests.ErrorValidationsTest -->
+    </test> <!-- Error Validations Test -->
+    <test started-at="2024-05-25T02:02:06 IST" name="Submit Order Test" finished-at="2024-05-25T02:02:25 IST" duration-ms="19648">
+      <class name="Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]" started-at="2024-05-25T02:02:06 IST" name="launchApplication" finished-at="2024-05-25T02:02:09 IST" duration-ms="3508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]" started-at="2024-05-25T02:02:09 IST" name="submitOrder" data-provider="getData" finished-at="2024-05-25T02:02:13 IST" duration-ms="3046" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,15 +56,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" started-at="2024-03-02T12:23:24 IST" name="tearDown" finished-at="2024-03-02T12:23:24 IST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]" started-at="2024-05-25T02:02:13 IST" name="tearDown" finished-at="2024-05-25T02:02:13 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" started-at="2024-03-02T12:23:24 IST" name="launchApplication" finished-at="2024-03-02T12:23:26 IST" duration-ms="1890" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]" started-at="2024-05-25T02:02:13 IST" name="launchApplication" finished-at="2024-05-25T02:02:15 IST" duration-ms="1972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" started-at="2024-03-02T12:23:26 IST" name="submitOrder" data-provider="getData" finished-at="2024-03-02T12:23:29 IST" duration-ms="2982" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]" started-at="2024-05-25T02:02:15 IST" name="submitOrder" data-provider="getData" finished-at="2024-05-25T02:02:25 IST" duration-ms="10310" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -41,26 +72,86 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.76, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\VEERESH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 125.0.6422.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fea0e348c2839dd4d50a7ade241df491]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.76, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\VEERESH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 125.0.6422.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fea0e348c2839dd4d50a7ade241df491
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Selenium.SeleniumFrameWorkTestNG.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:36)
+at Selenium.SeleniumFrameWorkTestNG.PageObjects.ProductCatalogue.getProductList(ProductCatalogue.java:36)
+at Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" started-at="2024-03-02T12:23:29 IST" name="tearDown" finished-at="2024-03-02T12:23:29 IST" duration-ms="66" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]" started-at="2024-05-25T02:02:25 IST" name="tearDown" finished-at="2024-05-25T02:02:25 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" started-at="2024-03-02T12:23:29 IST" name="launchApplication" finished-at="2024-03-02T12:23:31 IST" duration-ms="1708" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" started-at="2024-03-02T12:23:31 IST" name="OrderHistoryTest" finished-at="2024-03-02T12:23:31 IST" depends-on-methods="Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder" duration-ms="730" status="PASS">
+        <test-method signature="OrderHistoryTest()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]" started-at="2024-05-25T02:02:25 IST" name="OrderHistoryTest" finished-at="2024-05-25T02:02:25 IST" depends-on-methods="Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.OrderHistoryTest() on instance Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31 depends on not successfully finished methods 
+[Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder() on instance Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.OrderHistoryTest() on instance Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31 depends on not successfully finished methods 
+[Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest.submitOrder() on instance Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@32f61a31]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest@11389053]" started-at="2024-03-02T12:23:31 IST" name="tearDown" finished-at="2024-03-02T12:23:32 IST" duration-ms="81" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- Selenium.SeleniumFrameWorkTestNG.tests.SubmitOrderTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
 </testng-results>
