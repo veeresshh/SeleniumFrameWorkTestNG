@@ -11,24 +11,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Selenium.SeleniumFrameWorkTestNG.PageObjects.CartPage;
 import Selenium.SeleniumFrameWorkTestNG.PageObjects.OrderPage;
 
-
 public class AbstractComponent {
-	
+
 	WebDriver driver;
 
 	public AbstractComponent(WebDriver driver) {
-		
+
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		
+
 	}
-	
+
 	@FindBy(css = "[routerlink*='cart']")
 	WebElement cartHeader;
-	
+
 	@FindBy(css = "[routerlink*='myorders']")
 	WebElement orderHeader;
-
 
 	public void waitForElementToAppear(By findBy) {
 
@@ -36,29 +34,27 @@ public class AbstractComponent {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 
 	}
-	
+
 	public void waitForWebElementToAppear(WebElement findBy) {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(findBy));
 
 	}
-	
-	public CartPage goToCartPage()
-	{
+
+	public CartPage goToCartPage() {
 		cartHeader.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;
 	}
-	
-	public OrderPage goToOrdersPage()
-	{
+
+	public OrderPage goToOrdersPage() {
 		orderHeader.click();
 		OrderPage orderPage = new OrderPage(driver);
 		return orderPage;
 	}
-	public void waitForElementToDisappear(WebElement ele) throws InterruptedException
-	{
+
+	public void waitForElementToDisappear(WebElement ele) throws InterruptedException {
 		Thread.sleep(1000);
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 //		wait.until(ExpectedConditions.invisibilityOf(ele));
@@ -66,4 +62,3 @@ public class AbstractComponent {
 	}
 
 }
-

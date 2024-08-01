@@ -1,6 +1,5 @@
 package Selenium.SeleniumFrameWorkTestNG.PageObjects;
 
-
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,7 +23,7 @@ public class ProductCatalogue extends AbstractComponent {
 
 	@FindBy(css = ".mb-3")
 	List<WebElement> products;
-	
+
 	@FindBy(css = ".ng-animating")
 	WebElement spinner;
 
@@ -36,25 +35,20 @@ public class ProductCatalogue extends AbstractComponent {
 		waitForElementToAppear(productsBy);
 		return products;
 	}
-	
-	public WebElement getProductByName(String productName)
-	{
-		WebElement prod =	getProductList().stream().filter(product->
-		product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst().orElse(null);
+
+	public WebElement getProductByName(String productName) {
+		WebElement prod = getProductList().stream()
+				.filter(product -> product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst()
+				.orElse(null);
 		return prod;
 	}
-	
-	
-	public void addProductToCart(String productName) throws InterruptedException
-	{
+
+	public void addProductToCart(String productName) throws InterruptedException {
 		WebElement prod = getProductByName(productName);
 		prod.findElement(addToCart).click();
 		waitForElementToAppear(toastMessage);
 		waitForElementToDisappear(spinner);
 
-
 	}
-	
-	
 
 }

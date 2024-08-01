@@ -32,96 +32,89 @@ public class BaseTest {
 
 	public WebDriver driver;
 	public LandingPage landingPage;
-	
 
 	public WebDriver initializeDriver() throws IOException
-	
-	
-	
 
 	{
 		// properties class
 
 		Properties prop = new Properties();
 		// Because ALL will use eclipse so dynamically giving eclipse path
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//Selenium//SeleniumFrameWorkTestNG//Resources//GlobalData.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")
+				+ "//src//main//java//Selenium//SeleniumFrameWorkTestNG//Resources//GlobalData.properties");
 		prop.load(fis);
-		
-		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") :prop.getProperty("browser");
-		//prop.getProperty("browser"); Used in running in CMD from Maven
+
+		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
+				: prop.getProperty("browser");
+		// prop.getProperty("browser"); Used in running in CMD from Maven
 
 		if (browserName.contains("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
-			if(browserName.contains("headless")){
-			options.addArguments("headless");
-			}		
+			if (browserName.contains("headless")) {
+				options.addArguments("headless");
+			}
 			driver = new ChromeDriver(options);
-			driver.manage().window().setSize(new Dimension(1440,900));//full screen
+			driver.manage().window().setSize(new Dimension(1440, 900));// full screen
 
-			
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
 					"C:\\Program Files (x86)\\Simplify3x\\SimplifyQA\\libs\\drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			// Firefox
-			
-			
+
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			// Edge
-			System.setProperty("webdriver.edge.driver", "C:\\Program Files (x86)\\Simplify3x\\SimplifyQA\\libs\\drivers\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver",
+					"C:\\Program Files (x86)\\Simplify3x\\SimplifyQA\\libs\\drivers\\msedgedriver.exe");
 			driver = new EdgeDriver();
 		}
-		
-		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Common code so i have written outside if block
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Common code so i have written outside if
+																			// block
 		driver.manage().window().maximize();
 		return driver;
 
 	}
-	
-	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException
-	{
-		//read json to string
-	String jsonContent = 	FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
-	
-	//String to HashMap- Jackson Databind
-	
-	  ObjectMapper mapper = new ObjectMapper();
-	  List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {});
-	  return data;
-	
-	//{map, map}
+
+	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
+		// read json to string
+		String jsonContent = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
+
+		// String to HashMap- Jackson Databind
+
+		ObjectMapper mapper = new ObjectMapper();
+		List<HashMap<String, String>> data = mapper.readValue(jsonContent,
+				new TypeReference<List<HashMap<String, String>>>() {
+				});
+		return data;
+
+		// {map, map}
 
 	}
-	
-	public String getScreenshot(String testCaseName,WebDriver driver) throws IOException
-	{
-		TakesScreenshot ts = (TakesScreenshot)driver;
+
+	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
 		FileUtils.copyFile(source, file);
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
-		
-		
+
 	}
-	
-	@BeforeMethod(alwaysRun=true)
-	public LandingPage launchApplication() throws IOException
-	{
-		
-	    driver = initializeDriver();
+
+	@BeforeMethod(alwaysRun = true)
+	public LandingPage launchApplication() throws IOException {
+
+		driver = initializeDriver();
 		landingPage = new LandingPage(driver);
 		landingPage.goTo();
 		return landingPage;
-	
-		
+
 	}
-	
-	@AfterMethod(alwaysRun=true)
-	
-	public void tearDown()
-	{
+
+	@AfterMethod(alwaysRun = true)
+
+	public void tearDown() {
 		driver.close();
 	}
 }
